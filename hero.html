@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Hero - Mahatma Gandhi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        
+        .hero-section {
+            margin-bottom: 40px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 30px;
+            border: 2px solid #cccccc;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+        
+        .description {
+            color: #333333;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+        
+        .media-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+        
+        .media-label {
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #cccccc;
+            margin-bottom: 20px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .location-info {
+            color: #333333;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        
+        .location-info strong {
+            color: #000000;
+        }
+        
+        .achievements {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+        
+        .achievements ul {
+            list-style-position: inside;
+            color: #333333;
+            line-height: 1.8;
+        }
+        
+        .achievements li {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .section-title {
+                font-size: 1.4em;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+            
+            .hero-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mahatma Gandhi</h1>
+        <p class="subtitle">Father of the Nation - Champion of Non-Violence</p>
+        
+        <!-- Hero Image Section -->
+        <div class="hero-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbCY_qh5Tt9Dtu4ZeJnFdXqESSWP7-WItjl7fEj_yJR8xWSnYeNKzyeA&s" alt="Mahatma Gandhi" class="hero-image">
+            <p class="description">
+                Mohandas Karamchand Gandhi, commonly known as Mahatma Gandhi, was an Indian lawyer, anti-colonial nationalist, and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule. He inspired movements for civil rights and freedom across the world.
+            </p>
+        </div>
+        
+        <!-- Early Life Section -->
+        <div class="hero-section">
+            <h2 class="section-title">Early Life & Education</h2>
+            <p class="description">
+                Gandhi was born on October 2, 1869, in Porbandar, Gujarat. He studied law in London and practiced as a barrister. His experiences in South Africa exposed him to racial discrimination, which shaped his philosophy of non-violence and civil resistance. He developed the concept of Satyagraha (truth-force), which became the foundation of his political activism.
+            </p>
+        </div>
+        
+        <!-- Audio Section -->
+        <div class="hero-section media-section">
+            <div class="media-label">Listen to Mahatma Gandhi's Speech</div>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="description" style="margin-bottom: 0;">
+                This audio represents an inspirational speech about non-violence and truth. Gandhi's powerful words continue to inspire millions around the world.
+            </p>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="hero-section media-section">
+            <div class="media-label">Documentary Video - Life of Mahatma Gandhi</div>
+            <video controls poster="">
+                <source src="https://www.youtube.com/watch?v=4pHh5Pc6zpQ&pp=ygUmYmlvZ3JhcGh5IG9mIG1haGF0bWEgZ2FuZGhpIGluIGVuZ2xpc2jSBwkJkQoBhyohjO8%3D" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p class="description" style="margin-bottom: 0;">
+                Watch a documentary covering key moments in Gandhi's life, his struggles, and his greatest achievements in leading India to independence.
+            </p>
+        </div>
+        
+        <!-- Location Section with Map -->
+        <div class="hero-section media-section">
+            <h2 class="section-title">Birthplace - Porbandar, Gujarat</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.7436264819766!2d69.62373!3d21.641428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3955371a5a3c3c3d%3A0x5a5a5a5a5a5a5a5a!2sPortbandar%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info">
+                <p>
+                    <strong>Location:</strong> Porbandar, Gujarat, India<br>
+                    <strong>Coordinates:</strong> 21.6414° N, 69.6237° E<br>
+                    <strong>Birth Date:</strong> October 2, 1869<br>
+                    <strong>Significance:</strong> Porbandar is a coastal town in Gujarat where Gandhi was born. Today, it is home to the Gandhi Birthplace Museum, a popular tourist destination dedicated to his life and work.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Achievements Section -->
+        <div class="achievements">
+            <h2 class="section-title">Major Achievements</h2>
+            <ul>
+                <li>Led the Indian independence movement against British colonial rule</li>
+                <li>Pioneered and popularized the philosophy of non-violent civil resistant (Satyagraha)</li>
+                <li>Organized the Salt March in 1930, a major turning point in the independence struggle</li>
+                <li>Served as President of the Indian National Congress</li>
+                <li>Inspired global civil rights movements, including Martin Luther King Jr.'s movement</li>
+                <li>Advocated for Indian hand-spun cloth (Khadi) and self-reliance</li>
+                <li>Won the Nobel Peace Prize nomination multiple times</li>
+                <li>Promoted communal harmony and unity among all religions in India</li>
+            </ul>
+        </div>
+        
+        <!-- Legacy Section -->
+        <div class="hero-section">
+            <h2 class="section-title">Legacy</h2>
+            <p class="description">
+                Mahatma Gandhi was assassinated on January 30, 1948, but his legacy continues to inspire millions. His philosophy of non-violence, truth, and social justice remains relevant today. Gandhi is revered as a global icon of peace and is honored on his birthday, October 2, which is observed as the International Day of Non-Violence by the United Nations. His life and teachings continue to guide freedom fighters, peace advocates, and ordinary citizens striving for a better world.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

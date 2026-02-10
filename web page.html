@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable Image Info Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            display: none;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#" onclick="showTable(); return false;">
+    <img src="image.jpg" alt="Click Me">
+</a>
+
+<table id="infoTable">
+    <tr>
+        <th>Field</th>
+        <th>Information</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Sample Item</td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>Example Category</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>This information appears when the image is clicked.</td>
+    </tr>
+</table>
+
+<script>
+    function showTable() {
+        document.getElementById("infoTable").style.display = "table";
+    }
+</script>
+
+</body>
+</html>
